@@ -11,7 +11,7 @@ ul{
 	padding: 0;
 }
 a,i,button{
-	color: lightblue;
+	color: blue;
 
 	text-decoration: none;
 	-webkit-transition: all .5s;
@@ -19,6 +19,9 @@ a,i,button{
 	    -ms-transition: all .5s;
 	     -o-transition: all .5s;
 	        transition: all .5s;
+}
+a{
+	color: brown;
 }
 
 .header{
@@ -188,30 +191,7 @@ a,i,button{
 	-webkit-border-radius: 10px;
 	        border-radius: 10px;
 }
-/*.modal__top li,.modal__bottom li{
-	margin-bottom: 1rem;
-}
-.modal__top {
-	margin-top: 0;
-}
 
-.modal__top li:last-child,.modal__bottom li:last-child{
-	border-bottom: 1px solid black;
-}
-
-.modal__cart{
-	display: block;
-	width: 100%;
-	padding: 1rem;
-	-webkit-border-radius: 5px;
-	        border-radius: 5px;	
-}
-
-.modal__social{
-	display: flex;
-	-webkit-justify-content: space-around;
-	        justify-content: space-around;
-}*/
 .modal .nav__bottom,.modal .nav__top{
 	display: block;
 	font-size: 2rem;
@@ -223,10 +203,24 @@ a,i,button{
 
 .modal .modal__cart{
 	margin-bottom: 1rem;
+	width: 100%;
+	padding: 1rem;
+	-webkit-border-radius: .5rem;
+	        border-radius: .5rem;
 }
 
 .modal .nav__top li,.modal .nav__bottom li{
 	margin-bottom: 1rem;
+}
+.modal .nav__top li a,.modal .nav__bottom li a{
+	color: #000;
+}
+.modal .nav__top li:last-child,.modal .nav__bottom li:last-child{
+	border-bottom: 1px solid black;
+}
+
+.modal .nav__top li:nth-child(2){
+  margin-left: 0rem;
 }
 
 /*media*/
