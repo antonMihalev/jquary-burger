@@ -203,7 +203,7 @@ a{
 .menu_toggle{
 	display: flex;
 	position: absolute;
-	top: 20px;
+	top: 35px;
 	right: 20px;
 }
 
@@ -226,7 +226,7 @@ a{
 	height: 50px;
 	
 	cursor: pointer;
-	background-color: rgba(0,55,255,.2);
+	background-color: rgba(0,55,255,.4);
 	-webkit-border-radius: 10px;
 	        border-radius: 10px;
 	-webkit-transition: all .6s;
@@ -236,7 +236,7 @@ a{
 	        transition: all .6s;
 }
 .menu_toggle__burger:hover{
-	background-color: rgba(0,55,255,.4);
+	background-color: rgba(0,55,255,.6);
 	-webkit-border-radius: 9px;
 	        border-radius: 9px;
 }
