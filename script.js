@@ -1,5 +1,7 @@
 $(function(){
   $(".menu_toggle__burger").on('click',function(){
+  	$(".menu_toggle__burger").toggleClass("active");
+  	$(".header").toggle('slow');
     $(".modal").toggle('slow');
     
     if (!$(".modal").find(".nav__bottom").length){
