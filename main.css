@@ -87,14 +87,13 @@ a{
 	-webkit-flex-direction: column;
 	    -ms-flex-direction: column;
 	        flex-direction: column;
-	
-	
-
 }	    
+
 .nav__top,.nav__bottom{
     display: flex;
     font-size: 1.4rem;
 }
+
 .nav__bottom{
 	-webkit-justify-content: space-between;
 	        justify-content: space-between;
@@ -103,8 +102,7 @@ a{
   margin-left: 4rem;
 }
     
-.header__right{
-    
+.header__right{    
     display: flex;
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
@@ -114,12 +112,78 @@ a{
     -webkit-align-items: center;
             align-items: center;
 }
-.modal__cart{
-	padding: 5px 10px;
-	border: 1px solid lightblue;
-	-webkit-border-radius: 30px;
-	        border-radius: 30px;
+
+.header__tel{
+	/*background: #666;*/
+	color: rgb(81,92,102);
+	text-align: center;
 }
+
+.header__tel p{
+	margin: 0;
+	text-transform: uppercase;
+	font-style: italic;
+	font-size: 3rem;	
+}
+
+.header__tel p+p{
+	font-size: 2rem;
+}
+
+.header__tel p span{
+	font-size: 3rem;
+	color: lightblue;
+	font-style: normal;		
+	
+}
+
+.header__cart{	
+    color: rgb(205,216,228);
+  	text-shadow: 0 -1px rgb(46,53,58);
+  	text-decoration: none;
+  	user-select: none;
+  	line-height: 2em;
+  	padding: 1px 1.2em;
+  	outline: none;
+  	border: 1px solid rgba(33,43,52,1);
+  	border-radius: 3px;
+  background: rgb(81,92,102) -webkit-linear-gradient(rgb(81,92,102), rgb(69,78,87));
+  background: rgb(81,92,102) -o-linear-gradient(rgb(81,92,102), rgb(69,78,87));
+  background: rgb(81,92,102) linear-gradient(rgb(81,92,102), rgb(69,78,87));
+  	box-shadow:
+   inset 0 1px rgba(101,114,126,1),
+   inset 0 0 1px rgba(140,150,170,.8),
+   0 1px rgb(83,94,104),
+   0 0 1px rgb(86,96,106);
+   cursor: pointer;
+}
+
+.header__cart:hover,.header__cart:active {
+  box-shadow:
+   inset 0 1px 3px rgba(0,10,20,.5),
+   0 1px rgb(83,94,104),
+   0 0 1px rgb(86,96,106);
+  color: lightblue;
+}
+.header__cart:focus:not(:active) {
+  border: 1px solid rgb(22,32,43);
+  border-bottom: 1px solid rgb(25,34,45);
+  background: rgb(53,61,71);
+  box-shadow:
+   inset 0 1px 3px rgba(0,10,20,.5),
+   0 1px rgb(83,94,104),
+   0 0 1px rgb(86,96,106);
+  pointer-events: none;
+}
+
+.header__cart i{
+	color: inherit;
+}
+
+
+
+
+
 
 .menu_toggle{
 	display: flex;

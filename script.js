@@ -7,7 +7,7 @@ $(function(){
     if (!$(".modal").find(".nav__bottom").length){
       $(".nav__bottom").clone().appendTo(".modal");
       $(".nav__top").clone().appendTo(".modal");
-      $(".modal__cart").clone().appendTo(".modal");
+      $(".header__cart").clone().appendTo(".modal");
       $(".header__social").clone().appendTo(".modal");
     }
 
