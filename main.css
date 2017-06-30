@@ -29,9 +29,8 @@ a{
 
 .header{
   display: flex;
-  background-color: rgba(255,255,0,.2);
+  background-color: rgba(255,200,0,.2);
   font-size: 1.6rem;
-  color: lightblue;
 }
 
 .header__left{
@@ -67,14 +66,19 @@ a{
 	width: 2rem;
 	height: 2rem;
 	font-size: 1.4rem;
-	border: 1px solid grey;
+	border: 1px solid lightblue;
 	-webkit-border-radius: 50%;
 	        border-radius: 50%;
 	padding: 10px;
-	color: lightblue;
 }
 
 .header__social a i{
+	color: lightblue;
+}
+.header__social a:hover{
+	color: lightgreen;
+	border: 1px solid lightgreen;
+	background-color: rgba(255,255,255,.6);	
 }
 
 
@@ -87,19 +91,35 @@ a{
 	-webkit-flex-direction: column;
 	    -ms-flex-direction: column;
 	        flex-direction: column;
+	font-size: 2rem;
 }	    
-
+.nav__top{
+	font-size: 1.4rem;
+}
 .nav__top,.nav__bottom{
     display: flex;
-    font-size: 1.4rem;
+}
+
+.nav__top li:nth-child(2){
+    margin-left: 5rem;
+}
+.nav__top li a,.nav__bottom li a{
+   color: #200772;
 }
 
 .nav__bottom{
 	-webkit-justify-content: space-between;
 	        justify-content: space-between;
 }
-.nav__top li:nth-child(2){
-  margin-left: 4rem;
+
+.nav__bottom li a{
+	font-size: 3rem;
+}
+
+.nav__bottom li:hover a,.nav__top li:hover a{
+	text-shadow: 1px 1px 2px white;
+	-webkit-box-shadow: 0px 0px 30px white;
+	        box-shadow: 0px 0px 30px white;
 }
     
 .header__right{    
@@ -179,12 +199,7 @@ a{
 .header__cart i{
 	color: inherit;
 }
-
-
-
-
-
-
+/*Menu Toggle*/
 .menu_toggle{
 	display: flex;
 	position: absolute;
@@ -304,6 +319,10 @@ a{
 
 .modal .header__social{
 	display: flex;
+	margin-top: 2rem;
+}
+.modal .header__social a i{
+	color: rgba(0,0,255,.7);
 }
 
 .modal .modal__cart{
@@ -327,6 +346,9 @@ a{
 .modal .nav__top li:nth-child(2){
   margin-left: 0rem;
 }
+
+
+
 
 /*media*/
 @media (max-width: 1000px) {
